@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aph-93-DP4">
+                                <rect key="frame" x="77" y="48" width="172" height="36"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xnq-n0-FId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-Od-hsX">
+                                <rect key="frame" x="113" y="219" width="100" height="80"/>
+                                <color key="backgroundColor" red="0.46207391009999998" green="1" blue="0.35007495350000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0fn-al-u7G"/>
+                                    <constraint firstAttribute="width" constant="100" id="rlO-eQ-4JN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Tap Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XJx-Wf-PA9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz4-gz-Xew">
+                                <rect key="frame" x="77" y="409" width="172" height="83"/>
+                                <color key="backgroundColor" red="0.95702172957781784" green="1" blue="0.56490348380316813" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="syg-sl-fqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pz4-gz-Xew" firstAttribute="top" secondItem="1dx-Od-hsX" secondAttribute="bottom" constant="110" id="5F0-bL-G4Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pz4-gz-Xew" secondAttribute="trailing" constant="55" id="5f6-fw-zbk"/>
+                            <constraint firstItem="pz4-gz-Xew" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="61" id="7yb-cQ-GAa"/>
+                            <constraint firstItem="aph-93-DP4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="61" id="Ecr-NO-oxf"/>
+                            <constraint firstItem="1dx-Od-hsX" firstAttribute="top" secondItem="aph-93-DP4" secondAttribute="bottom" constant="135" id="HdT-jz-AXN"/>
+                            <constraint firstItem="1dx-Od-hsX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="97" id="QZp-Gg-FAJ"/>
+                            <constraint firstItem="pz4-gz-Xew" firstAttribute="leading" secondItem="aph-93-DP4" secondAttribute="leading" id="VBV-po-VaV"/>
+                            <constraint firstItem="aph-93-DP4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="Y1s-Tc-EdJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1dx-Od-hsX" secondAttribute="trailing" constant="91" id="gnj-Ox-XxA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aph-93-DP4" secondAttribute="trailing" constant="55" id="goJ-CS-Xcs"/>
+                            <constraint firstItem="aph-93-DP4" firstAttribute="trailing" secondItem="pz4-gz-Xew" secondAttribute="trailing" id="mjF-w5-4At"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lblScore" destination="pz4-gz-Xew" id="ncD-C6-Aw6"/>
+                        <outlet property="lblTime" destination="aph-93-DP4" id="NI4-AC-YOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="178"/>
+        </scene>
+    </scenes>
+</document>
